@@ -6,8 +6,7 @@ function calculateRhombusArea() {
   const area = 0.5 * rhombusBase * rhombusHeight;
 
   // input text
-  const rhombusText = document.getElementById("rhombus-area");
-  rhombusText.innerText = area;
+  textArea("rhombus-area", area);
 }
 
 // Common Function for Input Field
@@ -16,4 +15,11 @@ function getInputField(inputId) {
   const inputValue = inputField.value;
   const base = parseFloat(inputValue);
   return base;
+}
+
+// text function
+
+function textArea(textId, area) {
+  const text = document.getElementById(textId);
+  text.innerText = area;
 }

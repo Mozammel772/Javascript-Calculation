@@ -125,19 +125,80 @@
                         </div>
                     </div>
                 </div>
+                <!-- pentagon -->
+                <div class="card bg-red-100 w-full shadow-xl">
+                    <figure>
+                        <img src="images/pentagon.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class=" text-3xl font-bold font-mono">pentagon!</h2>
+                        <p class="text-xl font-medium font-mono">Area (A) = 0.5 X W X I</p>
+                        <div>
+                            <input id="pentagon-base" class="w-24 text-xl rounded-md p-1" type="text" placeholder="B">
+                            <span class="ml-1 font-mono text-xl">cm</span>
+                            <input id="pentagon-height" class="w-24 text-xl rounded-md p-1" type="text" placeholder="H">
+                            <span class="ml-1 font-mono text-xl">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl font-mono font-medium">Area : <span id="pentagon-area"
+                                    class="text-purple-600 font-semibold"></span></span>
+                                <span>Cm</span><sup>2</sup>
+                            </p>
+                        </div>
+                        <div>
+                            <button onclick="calculatePentagonArea()"
+                                class="btn btn-primary w-full font-mono text-xl">Calculation</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ellipse -->
+                <div class="card bg-red-100 w-full shadow-xl">
+                    <figure>
+                        <img src="images/ellipse.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class=" text-3xl font-bold font-mono">Ellipse!</h2>
+                        <p class="text-xl font-medium font-mono">Area (A) = 0.5 X W X I</p>
+                        <div>
+                            <input id="ellipse-base" class="w-24 text-xl rounded-md p-1" type="text" placeholder="B">
+                            <span class="ml-1 font-mono text-xl">cm</span>
+                            <input id="ellipse-height" class="w-24 text-xl rounded-md p-1" type="text" placeholder="H">
+                            <span class="ml-1 font-mono text-xl">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl font-mono font-medium">Area : <span id="ellipse-area"
+                                    class="text-purple-600 font-semibold"></span></span>
+                                <span>Cm</span><sup>2</sup>
+                            </p>
+                        </div>
+                        <div>
+                            <button onclick="calculateEllipseArea()"
+                                class="btn btn-primary w-full font-mono text-xl">Calculation</button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <!-- Area Calculation Container -->
             <div class="w-96 border-2 border-gray-800 rounded-md">
                 <h3 class="text-3xl text-center p-4 underline ">Area Calculation</h3>
+                <div>
+                    <!-- <h1></h1>
+                    <p class="text-xl font-mono font-medium">Area : <span id="triangle-area"
+                            class="text-purple-600 font-semibold"></span></span>
+                        <span>Cm</span><sup>2</sup>
+                    </p>
+                    <button class="btn btn-primary">Convert to cm<sup>2</sup></button> -->
+                </div>
             </div>
         </div>
 
     </main>
-    <script src="Script/Triangle-Calculate.js"></script>
+    <!-- <script src="Script/Triangle-Calculate.js"></script>
     <script src="Script/rectangle-calculate.js"></script>
     <script src="Script/Parallelogram-calculate.js"></script>
-    <script src="Script/rhombus-calculate.js"></script>
+    <script src="Script/rhombus-calculate.js"></script> -->
+    <script src="scripts.js"></script>
 </body>
 
 </html>
